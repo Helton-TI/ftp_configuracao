@@ -34,6 +34,8 @@ Ou, se quiser manter Apache como dono mas permitir edição pelo grupo suporte:
 bash
 sudo chown -R www-data:suporte /var/www/html
 sudo chmod -R 775 /var/www/html
+
+
 ⚙️ Passo 3: Configuração mínima do vsftpd
 Editar /etc/vsftpd.conf:
 
@@ -84,6 +86,8 @@ Liberar portas:
 bash
 sudo ufw allow 21/tcp
 sudo ufw allow 30000:30100/tcp   # portas passivas
+
+
 🌐 Passo 6: Configuração de modo passivo
 Adicionar ao /etc/vsftpd.conf:
 
